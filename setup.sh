@@ -39,4 +39,4 @@ echo "--bg-fill $HOME/background/vampire.jpg" >> "$HOME/.config/bspwm/bspwmrc"
 # Actualizar paquetes
 sudo apt update
 
-echo -e "%{F#3ecae6}\nPor favor reinicie bspwm para ver los cambios\n"
+echo -e "%{F#3ecae6}\nPor favor reinicie bspwm para ver los cambios y copiar la funcion #Target en tu ruta .zshrc\n"
