@@ -6,5 +6,5 @@ function settarget(){
 }
 
 function cleartarget(){
-    echo '' > /home/morgan/.config/bin/target
+    echo '' > $HOME/.config/bin/target
 }
