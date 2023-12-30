@@ -9,7 +9,6 @@
 ### Instructions:
 
 1. Clone the repository, preferably in a separate folder to avoid conflicts.
-(Use this as if it were code)
 ```bash
  git clone https://github.com/ThePunkster/vampireDotfile2.git
 ```
