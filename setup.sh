@@ -4,17 +4,17 @@ echo "Verificando rutas"
 
 # Verificando las carpetas necesarias
 if [ -d "$HOME/.config/polybar" ]; then
-    echo -e "%{F#3ecae6}/nEliminando polybar/n"
-    sudo rm -r "$HOME/.config/polybar/n"
+    echo -e "\nEliminando polybar\n"
+    sudo rm -r "$HOME/.config/polybar"
 elif [ -d "$HOME/.config/bin" ]; then
-    echo -e "/n%{F#3ecae6}Eliminando bin/n"
+    echo -e "\nEliminando bin\n"
     sudo rm -r "$HOME/.config/bin"
 elif [ -d "$HOME/.config/picom" ]; then
-    echo -e "%{F#3ecae6}/nEliminando picom/n"
+    echo -e "\nEliminando picom\n"
     sudo rm -r "$HOME/.config/picom"
 fi
 
-echo -e "%{F#3ecae6}\nCreando carpetas y pegando archivos\n"
+echo -e "\nCreando carpetas y pegando archivos\n"
 
 # Crear directorios con la opción -p para crear padres si no existen
 mkdir -p "$HOME/.config/polybar"
@@ -37,6 +37,6 @@ echo "picom" >> "$HOME/.config/bspwm/bspwmrc"
 echo "--bg-fill $HOME/background/vampire.jpg" >> "$HOME/.config/bspwm/bspwmrc"
 
 # Actualizar paquetes
-sudo apt update
+sudo apt update && sudo apt upgrade
 
 echo -e "%{F#3ecae6}\nPor favor reinicie bspwm para ver los cambios y copiar la funcion #Target en tu ruta .zshrc\n"
